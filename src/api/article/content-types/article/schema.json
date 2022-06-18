@@ -25,18 +25,7 @@
       "type": "richtext",
       "required": true
     },
-    "coverMedium": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "coverSmall": {
+    "cover": {
       "type": "media",
       "multiple": false,
       "required": true,
