@@ -28,6 +28,16 @@
     "coverURL": {
       "type": "string",
       "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "articles"
+    },
+    "figcaption": {
+      "type": "string",
+      "required": true
     }
   }
 }
