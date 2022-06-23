@@ -31,7 +31,7 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "Cover": {
+    "cover": {
       "type": "component",
       "repeatable": false,
       "component": "figure.figure",
