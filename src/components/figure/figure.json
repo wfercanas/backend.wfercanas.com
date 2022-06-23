@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_figure_figures",
+  "info": {
+    "displayName": "Image",
+    "icon": "file-image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alt": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "figcaption": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

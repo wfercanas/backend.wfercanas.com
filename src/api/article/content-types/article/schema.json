@@ -25,18 +25,16 @@
       "type": "richtext",
       "required": true
     },
-    "coverURL": {
-      "type": "string",
-      "required": true
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "figcaption": {
-      "type": "string",
+    "Cover": {
+      "type": "component",
+      "repeatable": false,
+      "component": "figure.figure",
       "required": true
     }
   }
