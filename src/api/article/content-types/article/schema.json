@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "author": {
+      "type": "string",
+      "required": true,
+      "default": "Fernando Cañas"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "published": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "type": "component",
+      "repeatable": false,
+      "component": "images.cover"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "articles"
+    }
+  }
+}
